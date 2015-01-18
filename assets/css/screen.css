@@ -717,6 +717,7 @@ margin on the iframe, cause it breaks stuff. */
     animation: fade-in-down 0.8s;
     -webkit-animation-delay: .2s;
     animation-delay: .2s;
+    visibility: hidden;
 }
 
 .home-template .page-description {
