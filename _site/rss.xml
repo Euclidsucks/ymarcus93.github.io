@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Yuval Marcus</title>
+    <link>yuvalmarcus.io</link>
+    <description>Simply, a blog.</description>
+    <pubDate>Sun, 18 Jan 2015 08:38:00 -0500</pubDate>
+    <item>
+      <title>Sample Post</title>
+      <link>yuvalmarcus.io/sample/test/2015/01/18/sample-post.html</link>
+      <description>&lt;p&gt;Lorem markdownum. Nulla visa litus, Chrysenque quam Arachnes nominibus variis
+utque tellure vera sponte? Vires et caedis aequales nullaque tellure.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 18 Jan 2015 08:38:00 -0500</pubDate>
+      <dc:date>2015-01-18T08:38:00-05:00</dc:date>
+    </item>
+    <dc:date>2015-01-18T08:38:00-05:00</dc:date>
+  </channel>
+</rss>
