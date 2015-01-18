@@ -12,8 +12,7 @@
     <item>
       <title>Sample Post</title>
       <link>yuvalmarcus.io/sample/test/2015/01/18/sample-post.html</link>
-      <description>&lt;p&gt;Lorem markdownum. Nulla visa litus, Chrysenque quam Arachnes nominibus variis
-utque tellure vera sponte? Vires et caedis aequales nullaque tellure.&lt;/p&gt;
+      <description>&lt;p&gt;THIS IS A TEST&lt;/p&gt;
 </description>
       <pubDate>Sun, 18 Jan 2015 08:38:00 -0500</pubDate>
       <dc:date>2015-01-18T08:38:00-05:00</dc:date>
