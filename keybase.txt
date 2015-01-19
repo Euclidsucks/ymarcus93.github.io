@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/yuvalmarcus
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://yuvalmarcus.io
+  * I am yuvalmarcus (https://keybase.io/yuvalmarcus) on keybase.
+  * I have a public key with fingerprint 1B19 CB38 FA44 B2EC A97C  CD0F 23FF 8F5A 2348 D327
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "1b19cb38fa44b2eca97ccd0f23ff8f5a2348d327",
+            "host": "keybase.io",
+            "key_id": "23ff8f5a2348d327",
+            "kid": "010128aab513d857a3fe6047b91a3c51348bc68a67e13bc9fd609e24283d299598f10a",
+            "uid": "88d7d1585b696a0cf499803b7b299900",
+            "username": "yuvalmarcus"
+        },
+        "service": {
+            "hostname": "yuvalmarcus.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1421633869,
+    "expire_in": 157680000,
+    "prev": "9dacec0ddbb1cb753026fbe6ca88a2d82103ec545f21b0d70e52a682759ab4d9",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFtkn1QVFUUwBfQNj78ABRFnKiXMI1s9b4/NnQhwpABIQSxQpd737sPn8Au7Fes
+gEGOTpCikhEDoxFjlDMWlag00ghmExMkOQOYltUCziyo4MQoBAP0HtVfdf+5c8/5
+nd+dc+YcW+anC/D503221RV/9kWfnlGoy+xQcksxaJXcmLEUy0eLl6xY8pCtyKZY
+HJgRIyAhiJDiZUDTkEQiEDhRlHCZpGSZlxlAUjQvUSSHGbA9VrtWoWogsKPnFKsa
+Ux9mRVKj/8PnLyZwAidIHgDIEJTEMxygZMTiNAcFAlCiGqR5KLI8YDlEUFAUZInF
+BUTSJE9JpCAwAi8TOFB1zkUdz0ucRDA8A1mBBbgo04LA4xTkoAoLOK6BdmSzgEKk
+0m6nCxQUApvotGPlBkxNuBQRaVPQmvkv9HdTRTarwypaC9TcHoejyG7Uah3uIg1+
+A0HzPxozVCySOky1woVsdsVqwYyESooORfMSNEmwFMWzggFDJUWKDZkVjWA4lsfV
+o/2DXKpSkICIRFySICREyDEUTrIyRKwIeB6QEk8SOIVEhmZkkoC4xOGIIQHLkxwj
+AEhLAqY1Vmyxqm5V6gB5qtOu5FkeBw6nDWHlAVW+65fofAJ0jy311TZCF+C/8t81
+CY5csRBvvV7/MPnMluwHZUEvvX9I//rgJ8tHMrdW5C6MB3z1rnf+vD5pU1WtGP1k
+hWju2Lwa3nt0Itr7y6mh4PVlOzcPzeCrQw7mDwz93Oy38VHjgOv4H42O4rk+047m
+dd3FMy26HftauISXVw4/fSk7t79mlt0Ycf6LVZ8FHUh+arBGPNbFJRFXstr6v8/M
+2jbKbpn4IYdta682fKnUhunKh8qDK/p+bxd2PRPz1gum3r3hzwaezgm7if92+mDl
+53cvxMSec99ZNuW5XWH8dsQ8O5e1IrPz684Nlw51z45X3rotGW82nWn6+FV97pqp
+QtO12LF7bye4dgfurU6d14Wt3XpqeFtarad9d+V01/iUdHVspiVqScYRT9rAtbu/
+TlWSzcsPRxbkOJLcH8QZ8vsGU+Y8PZX15OEnEnfFNjVc3v9gbKK7Li3iRsbkzpQf
+U45Mp87XRdOhMU730e3vpXyX3rPhxmBzb87CSIjk7H1ITz1fmsyYahI75ibvR4Su
+RZ/GRdy/3JTT5/3mxNXo1PHhfDLjZPNFT25LzC0uK3sSjMTxfq808Q2dhv1BXiLt
+nZLgWP9W/+k1+pNJURP9npDIsuswuqYxvlDfVX2FTswOqtMHHk/LKE73u7D9TjoX
+SrdFec/VevsumowlPw0HTifsa1161Pe1N9kG39HwuE1kd3dj/bpVVT4f9oTXmj76
+Cw==
+=/aXo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yuvalmarcus
+
+==================================================================
+
