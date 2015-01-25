@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>yuvalmarcus.io/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html</loc>
+    <lastmod>2015-01-19T12:04:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>yuvalmarcus.io/2015/01/18/first-post.html</loc>
+    <lastmod>2015-01-18T08:38:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>yuvalmarcus.io/about.html</loc>
+    <lastmod>2015-01-25T09:32:33-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>yuvalmarcus.io/archives.html</loc>
+    <lastmod>2015-01-25T09:32:33-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>yuvalmarcus.io/</loc>
+    <lastmod>2015-01-25T09:32:33-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>yuvalmarcus.io/projects.html</loc>
+    <lastmod>2015-01-25T09:32:33-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>yuvalmarcus.io/tags.html</loc>
+    <lastmod>2015-01-25T09:32:33-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
