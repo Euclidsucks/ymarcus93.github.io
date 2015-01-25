@@ -19,10 +19,8 @@
 </head>
 <body class="home-template">
 
-    <header class="main-header " style="background-image: url(true) ">
+    <header class="main-header no-cover">
     <nav class="main-nav overlay clearfix">
-            
-            <img class="logo-image" align="middle" src="assets/images/logo.png" alt="Blog Logo">
         <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
     </nav>
     <div class="vertical">
@@ -32,12 +30,14 @@
             <h2 class="page-description">
                  Simply, a blog... 
                 <br>
-                 <a href='/about.html'> About Me </a> 
-                <br>
-                <!--Add more pages here-->
-                <a href='/projects.html'>Projects</a>
-                <br>
-                <a href='/archives.html'>Archive</a>
+                <div class ="nav-links">
+                     <a href='/about.html'> About Me </a> 
+                    <br>
+                    <!--Add more pages here-->
+                    <a href='/projects.html'>Projects</a>
+                    <br>
+                    <a href='/archives.html'>Archive</a>
+                </div>
             </h2>
         </div>
     </div>
@@ -60,11 +60,13 @@
 
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/sample/test/2015/01/18/sample-post.html">Sample Post</a></h2>
+            <h2 class="post-title"><a href="/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html">Web Development Tools: Installation Tutorial</a></h2>
         </header>
         <section class="post-excerpt">
-            <p>THIS IS A TEST</p>
- <a class="read-more" href="/sample/test/2015/01/18/sample-post.html">&raquo;</a>
+            <h2>Introduction</h2>
+
+<p>The following tutorial will help you install <a href="http://brew.sh/">Homebrew</a>, an awesome package-manager for OS X, <a href="https://rvm.io/">RVM</a> and <a href="https://www.ruby-lang.org/en/">Ruby</a>, and <a href="http://nodejs.org/">NodeJS</a>. These tools will help you get started on having a computer configured for web development.</p>
+ <a class="read-more" href="/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html">&raquo;</a>
         </section>
         <footer class="post-meta">
             
@@ -72,7 +74,46 @@
                 Yuval Marcus
             
              
-                <a href='/tags.html'>on sample and test</a> 
+                <a href='/tags.html'>on tutorial, git, rvm, ruby, nodejs, and homebrew</a> 
+            
+            <time class="post-date" datetime="2015-01-19">
+                19 Jan 2015
+            </time> 
+        </footer>
+    </article>
+
+    <!-- Capser below -->
+<!--     <article class="">
+    <header class="post-header">
+        <h2 class="post-title"><a href="">}</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p> <a class="read-more" href="">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        <img class="author-thumb" src="" alt="Author image" nopin="nopin" />
+        
+        
+        <time class="post-date" datetime=""></time>
+    </footer>
+    </article> -->
+    <!--  -->
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="/2015/01/18/first-post.html">First Post</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>Hello world! This is my first post on my webiste.</p>
+ <a class="read-more" href="/2015/01/18/first-post.html">&raquo;</a>
+        </section>
+        <footer class="post-meta">
+            
+                <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
+                Yuval Marcus
+            
             
             <time class="post-date" datetime="2015-01-18">
                 18 Jan 2015
