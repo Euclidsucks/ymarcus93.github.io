@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Yuval Marcus - Simply, a blog.</title>
+    <meta name="description" content="A blog by Yuval Marcus." />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+
+</head>
+<body class="post-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Web Development Tools: Installation Tutorial</h1>
+            <section class="post-meta">                
+                <time class="post-date" datetime="2015-01-19">19 Jan 2015</time>
+                 
+                    <a href='/tags.html'>on tutorial, git, rvm, ruby, nodejs, and homebrew</a>
+                
+            <div style="font-size:12px;">
+            
+            3 minutes read
+            </div>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="yuvalmarcus.io">
+                
+                    <span class="blog-title">Yuval Marcus</span>
+                 
+            </a>
+        </header> -->
+        
+        <!-- <span class="post-meta">
+            <time datetime="2015-01-19">19 Jan 2015</time>
+             
+                on tutorial, git, rvm, ruby, nodejs, and homebrew 
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">Web Development Tools: Installation Tutorial</h1> -->
+
+        <section class="post-content">
+            <h2>Introduction</h2>
+
+<p>The following tutorial will help you install <a href="http://brew.sh/">Homebrew</a>, an awesome package-manager for OS X, <a href="https://rvm.io/">RVM</a> and <a href="https://www.ruby-lang.org/en/">Ruby</a>, and <a href="http://nodejs.org/">NodeJS</a>. These tools will help you get started on having a computer configured for web development.</p>
+
+<p><strong>Note</strong>: Before you continue, do remember to back up your computer just in case some system files are harmed. I don’t think the following steps will do that, but you never know.</p>
+
+<h2>Dependencies</h2>
+
+<p>Before you start installing Homebrew and Ruby, you need to make sure you have have Xcode and Xcode command line tools installed.</p>
+
+<h3>Xcode</h3>
+
+<p>Download Xcode from the Mac App Store <a href="https://itunes.apple.com/us/app/xcode/id497799835?mt=12">here</a>. Once downloaded, open it up and navigate to Preferences —&gt; Downloads —&gt; Components. Find “Command Line Tools” and click “Install”.</p>
+
+<p>Alternatively, you can install the Command Line Tools without needing to download the full installation of Xcode, by using Terminal.</p>
+
+<p>To do so, open up Terminal, which can be found in Applications —&gt; Utilities —&gt; Terminal (or just use Spotlight). Inside Terminal , type</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>xcode-select —install</code></pre></div>
+
+<p>A pop-up window should appear asking you whether you want to install the tools, click “Install”.</p>
+
+<p>After installation using either method, open up Terminal and enter the following command to verify the tools were installed correctly.</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>gcc —version</code></pre></div>
+
+<p>If the terminal prints back something like, “Configured with: —prefix=/Xcode.app/…”, then you are ready to move on to the next step.</p>
+
+<p>If the terminal did not print out something like that or if it printed some sort of error, follow the previous steps again or try to debug the problem.</p>
+
+<h2>Homebrew</h2>
+
+<p>Ok, now on to <a href="http://brew.sh/">Homebrew</a>. Homebrew is an awesome tool for Macs because it manages all of your open-source installed packages and allows for easy updates, reinstalls, and uninstalls.</p>
+
+<p>Type the following command into the Terminal.</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>ruby -e <span class="s2">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span></code></pre></div>
+
+<p><strong>Note</strong>: Before typing this command in, check the Homebrew website to verify that this is the command to install the package.</p>
+
+<p>After the installation completes, Terminal should print </p>
+
+<blockquote>
+<p>Installation successful!</p>
+</blockquote>
+
+<p>If it does not, google search the error message and debug the problem.</p>
+
+<p>Next, verify that Homebrew is able to start downloading packages by entering this command into the Terminal.</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew doctor</code></pre></div>
+
+<p>If the system prints back,</p>
+
+<blockquote>
+<p>Your system is ready to brew</p>
+</blockquote>
+
+<p>then move on to the next step. If not, google search the error and try to debug the problem. Usually, Homebrew will tell you how to fix the error when you run </p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew doctor</code></pre></div>
+
+<h2>Install Git</h2>
+
+<p>If you don’t know what <a href="http://git-scm.com/">Git</a> is, you’re missing out. Git is a version control system that helps you manage your code, collaborate with developers more easily, and reverse some unwanted changes. Also, git works well with any file, not just code. Many writers use it for more effective revision tools.</p>
+
+<p>To install Git, type the following commands into Terminal.</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew update
+<span class="nv">$ </span>brew install git</code></pre></div>
+
+<p>After installation, type in</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>which git</code></pre></div>
+
+<p>to verify that your Mac is pointing to the installation Homebrew did.</p>
+
+<p>If terminal prints </p>
+
+<blockquote>
+<p>/usr/local/bin/git</p>
+</blockquote>
+
+<p>then you successfully installed git using Homebrew. If it does not show this, google how to fix this error and try to debug it.</p>
+
+<p>Next, make sure you configure Git, so you can use it to commit and clone without problems.</p>
+
+<p>Enter the following commands into the Terminal, changing the name and email address when appropriate.</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git config --global user.name <span class="s2">&quot;Your Full Name&quot;</span>
+<span class="nv">$ </span>git config --global user.email <span class="s2">&quot;Your Email Address&quot;</span></code></pre></div>
+
+<h2>Install RVM and Ruby</h2>
+
+<p><a href="https://rvm.io/">RVM</a> will act as your Ruby Version Manager for your computer. This is important to have because it allows you to switch between multiple versions of Ruby and different gems when working in a different environment. Also, RVM makes it easier to stay updated with the latest stable release of Ruby, and makes sure the latest Ruby installation does not affect the system-installed Ruby.</p>
+
+<p>You can find some different installation options at their website <a href="https://rvm.io/rvm/install">here</a>. But the one that installs RVM and the latest stable version of Ruby is the following.</p>
+
+<p>Type this command into Terminal:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span><span class="se">\c</span>url -sSL https://get.rvm.io <span class="p">|</span> bash -s stable --ruby</code></pre></div>
+
+<p>After the installation is complete, quit Terminal completely (Command-Q), and open it up again.</p>
+
+<p>Type in the following command to verify that RVM was installed properly.</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span><span class="nb">type </span>rvm <span class="p">|</span> head -1</code></pre></div>
+
+<p>If the terminal prints, </p>
+
+<blockquote>
+<p>rvm is a function</p>
+</blockquote>
+
+<p>then RVM was successfully installed.</p>
+
+<p>Finally, make sure RVM is configured to use the latest Ruby for current and future shell sessions.</p>
+
+<p>Type in:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>rum use 2.2.0 —default</code></pre></div>
+
+<p>Then, verify by typing in:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>ruby -v</code></pre></div>
+
+<p>If it prints back the latest stable version of Ruby, then you are all set.</p>
+
+<h2>Install NPM and Node.js</h2>
+
+<p><a href="http://nodejs.org/">Node.js</a> is an important tool for any web developer. Node.js allows you to write any Javascript code and run it locally on your computer free of any web browser.</p>
+
+<p>However, to use Node.js, you need some Node.js package manager to help you with your plugins and code.</p>
+
+<p>Install Node.js and NPM using Homebrew.</p>
+
+<p>Type into Terminal:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew install node</code></pre></div>
+
+<h2>Conclusion</h2>
+
+<p>That’s it! You’re done. Now you have successfully configured your computer to work well in a web-development environment.</p>
+
+<p>If you have any questions, comment below.</p>
+
+        </section>
+
+        
+
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            
+                <figure class="author-image">
+                    <a class="img" href="/" style="background-image: url(/assets/images/profile.png)">
+                    <span class="hidden">Yuval Marcus's Picture</span></a>
+                </figure>
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4> Yuval Marcus </h4>
+                    <!-- Author Bio -->
+                    <p> 
+                        Yuval Marcus is a programmer and a tech enthusiast.
+                    </p>
+                </section>                
+            
+
+            <!-- Share links section -->
+            <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=Web Development Tools: Installation Tutorial&amp;url=https://yuvalmarcus.io/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://yuvalmarcus.io/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://yuvalmarcus.io/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+            
+            <!-- Disqus comments -->
+            
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+
+        var disqus_shortname = 'yuval-website'; 
+        var disqus_developer = 0; // developer mode is off
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js?https';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+            
+            
+        </footer>
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="/">Yuval Marcus</a> &copy; 
+              2015 &bull; All rights reserved.
+
+        <a href="https://github.com/ymarcus93">Github</a>
+        <a href="https://twitter.com/ymarcus93">Twitter</a>
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>|
+        <a href='tags.html'>Tags</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+    <!-- Google Analytics Tracking code -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-58658870-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>   
+</body>
+</html>
