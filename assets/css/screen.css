@@ -114,10 +114,19 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "github-icons";
+    src:url("../fonts/fontawesome-webfont.eot");
+    src:url("../fonts/fontawesome-webfont.woff") format("woff"),
+        url("../fonts/fontawesome-webfont.ttf") format("truetype"),
+        url("../fonts/fontawesome-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "github-icons", "casper-icons", "Open Sans", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -139,10 +148,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 .icon-twitter:before {
     content: "\f602";
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 .icon-google-plus:before {
     content: "\f603";
+}
+.icon-github:before {
+    content:"\f113";
+    font-size: 2.5em;
 }
 .icon-facebook:before {
     content: "\f604";
@@ -481,14 +494,14 @@ margin on the iframe, cause it breaks stuff. */
 /* Big cover image on the home page */
 .main-header {
     position: relative;
-    display: table;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 5rem;
-    text-align: center;
-    background: #222 no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
+display: table;
+width: 100%;
+height: 60%;
+margin-bottom: 5rem;
+text-align: center;
+color: #fff;
+background: #303538 no-repeat center center;
+background-size: cover;
 }
 
 .main-header .inner {
@@ -560,21 +573,20 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 /* Appears in the top right corner of your home page */
-.blog-logo {
-    display: block;
-    float: left;
-    background: none !important;
-    border: none !important;
+.blog-logo 
+{
+    text-decoration: none;
 }
-
-.blog-logo img {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+/* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
+.blog-logo img 
+{
     display: block;
-    height: 38px;
-    padding: 1px 0 5px 0;
+    max-height: 100px;
     width: auto;
+    margin: 0 auto;
+    line-height: 0;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 .back-button {
@@ -671,7 +683,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
-    margin: 10px 0 10px 0;
+    margin: 10px 0px 5px 17px;
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
@@ -680,12 +692,13 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .page-description {
-    margin: 0;
-    font-size: 2rem;
+    margin: 0 5px 2px 5px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
     line-height: 1.5em;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Merriweather", serif;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0;
     color: rgba(255,255,255,0.8);
 }
 
@@ -717,7 +730,7 @@ margin on the iframe, cause it breaks stuff. */
     animation-delay: 0.2s;
 }
 
-.home-template .logo-image {
+.home-template .blog-logo {
     -webkit-animation: fade-in-down 0.8s;
     animation: fade-in-down 0.8s;
     -webkit-animation-delay: .2s;
@@ -1012,9 +1025,9 @@ body:not(.post-template) .post-title {
     color: #D2DEE3;
     font-size: 10px;
     position: absolute;
-    top: 2px;
+    top: 9px;
     left: 9px;
-    font-weight: 700;
+    font-weight: bold;
     transition: color 0.5s ease;
 }
 
@@ -1025,6 +1038,78 @@ body:not(.post-template) .post-title {
 }
 
 .subscribe:hover:before {
+    color: #50585D;
+}
+
+.twitter {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -14px;
+    left: 53%;
+    margin-left: -15px;
+    border: #EBF2F6 1px solid;
+    text-align: center;
+    line-height: 2.4rem;
+    border-radius: 50px;
+    background: #FFF;
+    transition: box-shadow 0.5s;
+}
+
+/* The RSS icon, inserted via icon font */
+.twitter:before {
+    color: #D2DEE3;
+    font-size: 10px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+/* Add a box shadow to on hover */
+.twitter:hover {
+    box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
+    transition: box-shadow 0.25s;
+}
+
+.twitter:hover:before {
+    color: #50585D;
+}
+
+.github {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -14px;
+    left: 47%;
+    margin-left: -15px;
+    border: #EBF2F6 1px solid;
+    text-align: center;
+    line-height: 2.4rem;
+    border-radius: 50px;
+    background: #FFF;
+    transition: box-shadow 0.5s;
+}
+
+/* The RSS icon, inserted via icon font */
+.github:before {
+    color: #D2DEE3;
+    font-size: 10px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+/* Add a box shadow to on hover */
+.github:hover {
+    box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
+    transition: box-shadow 0.25s;
+}
+
+.github:hover:before {
     color: #50585D;
 }
 
@@ -1064,6 +1149,16 @@ body:not(.post-template) .post-title {
 
 /* On hover, show the tooltip! */
 .subscribe:hover .tooltip {
+    opacity: 1;
+    top: -33px;
+}
+/* On hover, show the tooltip! */
+.twitter:hover .tooltip {
+    opacity: 1;
+    top: -33px;
+}
+/* On hover, show the tooltip! */
+.github:hover .tooltip {
     opacity: 1;
     top: -33px;
 }
@@ -1309,39 +1404,44 @@ body:not(.post-template) .post-title {
    9. Footer - The bottom of every page
    ========================================================================== */
 
-.site-footer {
-    position: relative;
-    margin: 8rem 0 0 0;
-    padding: 0.5rem 15px;
-    border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+.site-footer 
+{
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
+    position: relative;
+    margin: 8rem 0 0 0;
+    padding: 4rem 0;
+    border-top: #EBF2F6 1px solid;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.7em;
+    color: #BBC7CC;
+    text-align: center;
+    background: #F7FAFB;
 }
 
 .site-footer a {
     color: #BBC7CC;
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 .site-footer a:hover {
     color: #50585D;
 }
 
-.poweredby {
-    display: block;
-    width: 45%;
-    float: right;
-    text-align: right;
+.poweredby .icon-ghost {
+font-weight: 700;
+text-decoration: none;
+}
+.poweredby .icon-ghost:hover {
+text-decoration: none;
+}
+.poweredby .icon-ghost:before {
+font-size: 1rem;
+margin-right: 0.2em;
 }
 
-.copyright {
-    display: block;
-    width: 45%;
-    float: left;
-}
 
 
 /* ==========================================================================
@@ -1377,17 +1477,21 @@ body:not(.post-template) .post-title {
     }
 
     .blog-logo img {
-        padding: 4px 0;
+        padding-right: 5px;
+        margin: auto;
     }
 
     .page-title {
         font-size: 4rem;
         letter-spacing: -1px;
+        margin: 10px 3px 10px 5px;
     }
+
 
     .page-description {
         font-size: 1.8rem;
         line-height: 1.5em;
+        margin: 0px 0px 0px 2px;
     }
 
     .post {
@@ -1495,12 +1599,9 @@ body:not(.post-template) .post-title {
         border-bottom: #e0e4e7 1px solid;
     }
 
-    .blog-logo {
-        padding: 10px 10px;
-    }
-
     .blog-logo img {
-        height: 26px;
+        max-height: 80px;
+        padding-right: -4px;
     }
 
     .back-button,
@@ -1511,6 +1612,37 @@ body:not(.post-template) .post-title {
         color: #2e2e2e;
         background: transparent;
     }
+
+.twitter {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -14px;
+    left: 60%;
+    margin-left: -15px;
+    border: #EBF2F6 1px solid;
+    text-align: center;
+    line-height: 2.4rem;
+    border-radius: 50px;
+    background: #FFF;
+    transition: box-shadow 0.5s;
+}
+
+.github {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -14px;
+    left: 40%;
+    margin-left: -15px;
+    border: #EBF2F6 1px solid;
+    text-align: center;
+    line-height: 2.4rem;
+    border-radius: 50px;
+    background: #FFF;
+    transition: box-shadow 0.5s;
+}
+
     .back-button:hover,
     .subscribe-button:hover {
         border-color: #ebeef0;
@@ -1700,7 +1832,8 @@ body:not(.post-template) .post-title {
     }
 
     .site-footer {
-        margin-top: 3rem;
+        margin-top: 6rem;
+        font-size: 1.1rem;
     }
 
     .author-profile {
