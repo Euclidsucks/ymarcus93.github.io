@@ -166,6 +166,10 @@ table { border-collapse: collapse; border-spacing: 0; }
     content:"\f113";
     font-size: 2.5em;
 }
+.icon-github-button:before {
+    content:"\f113";
+    font-size: 7em;
+}
 .icon-facebook:before {
     content: "\f604";
 }
@@ -652,6 +656,30 @@ background-size: cover;
     margin-right: 6px;
 }
 
+.github-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: right;
+    height: 38px;
+    padding: 0 20px;
+    border: transparent 1px solid;
+    color: #9EABB3;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.1);
+    transition: all ease 0.3s;
+}
+.github-button:before {
+    font-size: 15px;
+    margin-right: 6px;
+}
+
 /* Special styles when overlaid on an image*/
 .main-nav.overlay {
     position: absolute;
@@ -667,7 +695,8 @@ background-size: cover;
 }
 .no-cover .main-nav.overlay,
 .no-cover .back-button,
-.no-cover .subscribe-button {
+.no-cover .subscribe-button,
+.no-cover .github-button {
     background: none;
 }
 
@@ -676,7 +705,7 @@ background-size: cover;
 }
 
 .main-nav.overlay .back-button,
-.main-nav.overlay .subscribe-button {
+.main-nav.overlay .subscribe-button .github-button {
     border-color: rgba(255,255,255,0.6);
 }
 
@@ -690,6 +719,10 @@ background-size: cover;
 /* Add a border to the buttons on hover */
 .back-button:hover,
 .subscribe-button:hover {
+    border-color: #bfc8cd;
+    color: #9EABB3;
+}
+.github-button:hover {
     border-color: #bfc8cd;
     color: #9EABB3;
 }
@@ -730,7 +763,7 @@ background-size: cover;
 }
 
 .no-cover .main-nav.overlay .back-button,
-.no-cover .main-nav.overlay .subscribe-button {
+.no-cover .main-nav.overlay .subscribe-button .github-button {
     color: rgba(0,0,0,0.4);
     border-color: rgba(0,0,0,0.3);
 }
@@ -1635,6 +1668,13 @@ margin-right: 0.2em;
         color: #2e2e2e;
         background: transparent;
     }
+    .github-button {
+        height: 44px;
+        line-height: 41px;
+        border-radius: 0;
+        color: #2e2e2e;
+        background: transparent;
+    }
 
 .twitter {
     width: 28px;
@@ -1672,12 +1712,20 @@ margin-right: 0.2em;
         color: #2e2e2e;
         background: #ebeef0;
     }
+    .github-button:hover {
+        border-color: #ebeef0;
+        color: #2e2e2e;
+        background: #ebeef0;
+    }
 
     .back-button {
         padding: 0 15px 0 10px;
     }
 
     .subscribe-button {
+        padding: 0 12px;
+    }
+    .github-button {
         padding: 0 12px;
     }
 
@@ -1691,12 +1739,12 @@ margin-right: 0.2em;
         background: none;
     }
     .no-cover .main-nav.overlay .back-button,
-    .no-cover .main-nav.overlay .subscribe-button {
+    .no-cover .main-nav.overlay .subscribe-button .github-button {
         border: none;
     }
 
     .main-nav.overlay .back-button,
-    .main-nav.overlay .subscribe-button {
+    .main-nav.overlay .subscribe-button .github-button {
         border-color: transparent;
     }
 
