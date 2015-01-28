@@ -21,23 +21,23 @@
 
     <header class="main-header no-cover">
     <nav class="main-nav overlay clearfix">
-        <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
     </nav>
     <div class="vertical">
-        <div class="main-header-content inner">
-            <br>
+        <div class ="inner">
+            
+                <a class="blog-logo" href="/">
+                <img src="/assets/images/logo.png" alt="Blog Logo" />
+                </a>
+            
             <h1 class="page-title">Yuval Marcus</h1>
-            <h2 class="page-description">
-                 Simply, a blog... 
+            <h4 class="page-description">
+                Simply, a blog..
                 <br>
-                <div class ="nav-links">
-                     <a href='/about.html'> About Me </a> 
-                    <br>
-                    <!--Add more pages here-->
-                    <a href='/projects.html'>Projects</a>
-                    <br>
-                    <a href='/archives.html'>Archive</a>
-                </div>
+                <a href="/about">About Me</a>
+                <br>
+                <a href="projects">Projects</a>
+                <br>
+                <a href="archives">Archive</a>
             </h2>
         </div>
     </div>
@@ -60,13 +60,13 @@
 
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html">Web Development Tools: Installation Tutorial</a></h2>
+            <h2 class="post-title"><a href="/blog/web-development-tools-installation-tutorial">Web Development Tools: Installation Tutorial</a></h2>
         </header>
         <section class="post-excerpt">
             <h2>Introduction</h2>
 
 <p>The following tutorial will help you install <a href="http://brew.sh/">Homebrew</a>, an awesome package-manager for OS X, <a href="https://rvm.io/">RVM</a> and <a href="https://www.ruby-lang.org/en/">Ruby</a>, and <a href="http://nodejs.org/">NodeJS</a>. These tools will help you get started on having a computer configured for web development.</p>
- <a class="read-more" href="/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html">&raquo;</a>
+ <a class="read-more" href="/blog/web-development-tools-installation-tutorial">&raquo;</a>
         </section>
         <footer class="post-meta">
             
@@ -74,7 +74,7 @@
                 Yuval Marcus
             
              
-                <a href='/tags.html'>on tutorial, git, rvm, ruby, nodejs, and homebrew</a> 
+                on tutorial, git, rvm, ruby, nodejs, and homebrew
             
             <time class="post-date" datetime="2015-01-19">
                 19 Jan 2015
@@ -103,11 +103,11 @@
 
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/2015/01/18/first-post.html">First Post</a></h2>
+            <h2 class="post-title"><a href="/blog/first-post">First Post</a></h2>
         </header>
         <section class="post-excerpt">
             <p>Hello world! This is my first post on my webiste.</p>
- <a class="read-more" href="/2015/01/18/first-post.html">&raquo;</a>
+ <a class="read-more" href="/blog/first-post">&raquo;</a>
         </section>
         <footer class="post-meta">
             
@@ -148,18 +148,14 @@
 
 </main>
 
-    <footer class="site-footer clearfix">
-      <section class="copyright">
-        <a href="/">Yuval Marcus</a> &copy; 
-              2015 &bull; All rights reserved.
-
-        <a href="https://github.com/ymarcus93">Github</a>
-        <a href="https://twitter.com/ymarcus93">Twitter</a>
-      </section>
-      <section class="poweredby">Made with Jekyll using 
-        <a href="http://github.com/rosario/kasper">Kasper theme</a>|
-        <a href='tags.html'>Tags</a>
-      </section>
+    <footer class="site-footer">
+      <a class="subscribe icon-feed" href="/rss.xml"><span class="tooltip">Subscribe!</span></a>
+      <a class="twitter icon-twitter" href="http://twitter.com/ymarcus93"><span class="tooltip">Twitter</span></a>
+      <a class="github icon-github" href="http://github.com/ymarcus93"><span class="tooltip">GitHub</span></a>
+      <div class="inner">
+        <section class="copyright">All content copyright <a href="/">Yuval Marcus</a> &copy; 2015 &bull; All rights reserved.</section>
+        <section class="poweredby">Built with ♥ and <a href="http://jekyllrb.com">Jekyll</a>.
+      </div>
     </footer>
     
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
