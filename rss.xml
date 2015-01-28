@@ -11,7 +11,7 @@
     <pubDate>Mon, 19 Jan 2015 12:04:00 -0500</pubDate>
     <item>
       <title>Web Development Tools: Installation Tutorial</title>
-      <link>yuvalmarcus.io/tutorial/git/rvm/ruby/nodejs/homebrew/2015/01/19/web-development-tools-installation-tutorial.html</link>
+      <link>yuvalmarcus.io/blog/web-development-tools-installation-tutorial</link>
       <description>&lt;h2&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;The following tutorial will help you install &lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;, an awesome package-manager for OS X, &lt;a href=&quot;https://rvm.io/&quot;&gt;RVM&lt;/a&gt; and &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt;, and &lt;a href=&quot;http://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt;. These tools will help you get started on having a computer configured for web development.&lt;/p&gt;
@@ -21,7 +21,7 @@
     </item>
     <item>
       <title>First Post</title>
-      <link>yuvalmarcus.io/2015/01/18/first-post.html</link>
+      <link>yuvalmarcus.io/blog/first-post</link>
       <description>&lt;p&gt;Hello world! This is my first post on my webiste.&lt;/p&gt;
 </description>
       <pubDate>Sun, 18 Jan 2015 08:38:00 -0500</pubDate>
