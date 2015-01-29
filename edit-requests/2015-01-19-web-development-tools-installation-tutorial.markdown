@@ -32,7 +32,7 @@ After installation using either method, open up Terminal and enter the following
 $ gcc —version
 {% endhighlight %}
 
-If the terminal prints back something like, “Configured with: —prefix=/Xcode.app/…”, then you are ready to move on to the next step.
+If the terminal prints back something like {% ihighlight sh %} Configured with: —prefix=/Xcode.app/… {% endihighlight %}, then you are ready to move on to the next step.
 
 If the terminal did not print out something like that or if it printed some sort of error, follow the previous steps again or try to debug the problem.
 
@@ -46,8 +46,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 {% endhighlight %}
 **Note**: Before typing this command in, check the Homebrew website to verify that this is the command to install the package.
 
-After the installation completes, Terminal should print 
->Installation successful!
+After the installation completes, Terminal should print {% ihighlight sh %} Installation successful! {% endihighlight %}
 
 If it does not, google search the error message and debug the problem.
 
@@ -57,10 +56,7 @@ Next, verify that Homebrew is able to start downloading packages by entering thi
 $ brew doctor
 {% endhighlight %}
 
-If the system prints back,
->Your system is ready to brew
-
-then move on to the next step. If not, google search the error and try to debug the problem. Usually, Homebrew will tell you how to fix the error when you run 
+If the system prints back {% ihighlight sh %} Your system is ready to brew {% endihighlight %}, then move on to the next step. If not, google search the error and try to debug the problem. Usually, Homebrew will tell you how to fix the error when you run 
 {% highlight sh %}
 $ brew doctor
 {% endhighlight %}
@@ -80,10 +76,7 @@ $ which git
 {% endhighlight %}
 to verify that your Mac is pointing to the installation Homebrew did.
 
-If terminal prints 
->/usr/local/bin/git
-
-then you successfully installed git using Homebrew. If it does not show this, google how to fix this error and try to debug it.
+If terminal prints {% ihighlight sh %} /usr/local/bin/git {% endihighlight %}, then you successfully installed git using Homebrew. If it does not show this, google how to fix this error and try to debug it.
 
 Next, make sure you configure Git, so you can use it to commit and clone without problems.
 
@@ -111,10 +104,7 @@ Type in the following command to verify that RVM was installed properly.
 $ type rvm | head -1
 {% endhighlight %}
 
-If the terminal prints, 
->rvm is a function
-
-then RVM was successfully installed.
+If the terminal prints {% ihighlight sh %} rvm is a function {% endihighlight %}, then RVM was successfully installed.
 
 Finally, make sure RVM is configured to use the latest Ruby for current and future shell sessions.
 
