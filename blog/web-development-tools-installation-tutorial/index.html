@@ -122,7 +122,9 @@
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>gcc —version</code></pre></div>
 
-<p>If the terminal prints back something like, “Configured with: —prefix=/Xcode.app/…”, then you are ready to move on to the next step.</p>
+<p>If the terminal prints back something like 
+<code class="highlight language-sh" data-lang="sh">Configured with: —prefix<span class="o">=</span>/Xcode.app/…</code>
+, then you are ready to move on to the next step.</p>
 
 <p>If the terminal did not print out something like that or if it printed some sort of error, follow the previous steps again or try to debug the problem.</p>
 
@@ -136,11 +138,8 @@
 
 <p><strong>Note</strong>: Before typing this command in, check the Homebrew website to verify that this is the command to install the package.</p>
 
-<p>After the installation completes, Terminal should print </p>
-
-<blockquote>
-<p>Installation successful!</p>
-</blockquote>
+<p>After the installation completes, Terminal should print 
+<code class="highlight language-sh" data-lang="sh">Installation successful!</code></p>
 
 <p>If it does not, google search the error message and debug the problem.</p>
 
@@ -148,13 +147,9 @@
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew doctor</code></pre></div>
 
-<p>If the system prints back,</p>
-
-<blockquote>
-<p>Your system is ready to brew</p>
-</blockquote>
-
-<p>then move on to the next step. If not, google search the error and try to debug the problem. Usually, Homebrew will tell you how to fix the error when you run </p>
+<p>If the system prints back 
+<code class="highlight language-sh" data-lang="sh">Your system is ready to brew</code>
+, then move on to the next step. If not, google search the error and try to debug the problem. Usually, Homebrew will tell you how to fix the error when you run </p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew doctor</code></pre></div>
 
@@ -173,13 +168,9 @@
 
 <p>to verify that your Mac is pointing to the installation Homebrew did.</p>
 
-<p>If terminal prints </p>
-
-<blockquote>
-<p>/usr/local/bin/git</p>
-</blockquote>
-
-<p>then you successfully installed git using Homebrew. If it does not show this, google how to fix this error and try to debug it.</p>
+<p>If terminal prints 
+<code class="highlight language-sh" data-lang="sh">/usr/local/bin/git</code>
+, then you successfully installed git using Homebrew. If it does not show this, google how to fix this error and try to debug it.</p>
 
 <p>Next, make sure you configure Git, so you can use it to commit and clone without problems.</p>
 
@@ -204,13 +195,9 @@
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span><span class="nb">type </span>rvm <span class="p">|</span> head -1</code></pre></div>
 
-<p>If the terminal prints, </p>
-
-<blockquote>
-<p>rvm is a function</p>
-</blockquote>
-
-<p>then RVM was successfully installed.</p>
+<p>If the terminal prints 
+<code class="highlight language-sh" data-lang="sh">rvm is a <span class="k">function</span></code>
+, then RVM was successfully installed.</p>
 
 <p>Finally, make sure RVM is configured to use the latest Ruby for current and future shell sessions.</p>
 
