@@ -603,7 +603,7 @@ background-size: cover;
     margin: 0 auto;
     line-height: 0;
     padding-top: 10px;
-    padding-right: 23.5px;
+    padding-right: 27px;
 }
 
 .back-button {
@@ -729,7 +729,7 @@ background-size: cover;
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
-    margin: 10px 2px 5px 16px;
+    margin: 10px 8px 5px 13px;
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
@@ -738,7 +738,7 @@ background-size: cover;
 }
 
 .page-description {
-    margin: 0 6.5px 0px -5px;
+    margin: 0 20px 20px -5px;
     margin-bottom: 15px;
     font-size: 1.8rem;
     line-height: 1.5em;
@@ -746,6 +746,10 @@ background-size: cover;
     font-family: "Merriweather", serif;
     letter-spacing: 0;
     color: rgba(255,255,255,0.8);
+}
+
+.page-description a {
+    line-height: 185%;
 }
 
 .no-cover.main-header {
@@ -1530,7 +1534,7 @@ margin-right: 0.2em;
     }
 
     .blog-logo img {
-        padding-right: 5px;
+        padding-right: 10px;
         margin: auto;
     }
 
@@ -1544,7 +1548,13 @@ margin-right: 0.2em;
     .page-description {
         font-size: 1.8rem;
         line-height: 1.5em;
-        margin: 0px 6px 0px 7px;
+        margin: 0px 14px 0px 5px;
+        margin-right: 6px;
+        margin-left: 1px;
+    }
+
+    .page-description a {
+        line-height: 180%;
     }
 
     .post {
