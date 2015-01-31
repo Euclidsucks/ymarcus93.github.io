@@ -18,6 +18,7 @@ GEM
     command-builder (0.3.1)
       hash-utils (>= 0.18.0)
       pipe-run (>= 0.2.1)
+    cssminify (1.0.2)
     execjs (2.2.2)
     fast-stemmer (1.0.2)
     ffi (1.9.6)
@@ -115,6 +116,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  cssminify
   html_compressor
   jekyll
   jekyll-sitemap
